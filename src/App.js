@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css'
+
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="banner">
+        <div className="banner-content">
+          <h1 className="banner-header">PNPhotography</h1>
+          <p className="banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perspiciatis, illo nulla placeat nesciunt sed distinctio sint qui, quas dolorum quae consequatur asperiores commodi vel odit soluta cumque omnis aut!</p>
+          <ul className="banner-actions">
+            <li><a href="#"></a>.banner-action</li>
+          </ul>
+        </div>
+        <div className="banner-img">
+          <img src={require("./images/banner-img.jpg")} alt="person kayaking" />
+        </div>
+      </div>
     </div>
   );
 }
